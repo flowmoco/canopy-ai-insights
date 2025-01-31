@@ -14,3 +14,7 @@ Postman collection available here:
 
 [[https://github.com/flowmoco/canopy-ai-insights/blob/main/2025-01-31_ollama_api/Ollama.postman_collection.json][Ollama.postman_collection.json]]
 
+Links to external resources:
+
+ - [[https://www.postman.com/][Postman]] (for installing Postman)
+ - [[https://ollama.com/blog/embedding-models][Embedding models on Ollama blog]]
