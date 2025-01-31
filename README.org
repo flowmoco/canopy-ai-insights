@@ -1,1 +1,16 @@
-#+TITLE: Canopy Community: AI Insights
+[[./Flowmo_Logo.png]]
+
+* Canopy Community: AI Insights
+
+** Part 1 - Running LLMs locally and Ollama introduction
+
+[[https://www.youtube.com/live/Gdh8QvWn0dI?si=bRSdGBcm9LgdHIdG][https://www.youtube.com/live/Gdh8QvWn0dI?si=bRSdGBcm9LgdHIdG]]
+
+** Part 2 - Interacting with LLMs using APIs and intro to Embedding Models
+
+[[https://www.youtube.com/live/FoIMWhduZck?si=iyhGt5F2G-mlF6u7][https://www.youtube.com/live/FoIMWhduZck?si=iyhGt5F2G-mlF6u7]]
+
+Postman collection available here:
+
+[[https://github.com/flowmoco/canopy-ai-insights/blob/main/2025-01-31_ollama_api/Ollama.postman_collection.json][=Ollama.postman_collection.json=]]
+
