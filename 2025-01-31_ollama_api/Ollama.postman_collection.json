@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "463c4f0b-3a2e-47ac-9656-0fff781384db",
+		"name": "Ollama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3460689"
+	},
+	"item": [
+		{
+			"name": "Chat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\": \"llama3.2:latest\",\n \"stream\": false,\n \"options\": {\"temperature\": 0},\n\n \"messages\": [\n    {\"role\": \"user\",\n\n     // Your prompt in quotes below\n     \"content\": \"hello\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/chat",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Embed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"model\": \"mxbai-embed-large\",\n  \"input\": \"Llamas are members of the camelid family\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/embed",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"embed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
