@@ -25,7 +25,7 @@ Links to external resources:
 
 ** Part 4 - Chat context using APIs
 
-<video link to follow shortly>
+[[https://www.youtube.com/watch?v=mwzpspg5s38][https://www.youtube.com/watch?v=mwzpspg5s38]]
 
 Postman collection available here:
 
