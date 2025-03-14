@@ -18,3 +18,15 @@ Links to external resources:
 
  - [[https://www.postman.com/][Postman]] (for installing Postman)
  - [[https://ollama.com/blog/embedding-models][Embedding models on Ollama blog]]
+
+** Part 3 - IBM Granite 3.2 and starting to talk about chat context
+
+[[https://www.youtube.com/watch?v=glRTQqDwWpY][https://www.youtube.com/watch?v=glRTQqDwWpY]]
+
+** Part 4 - Chat context using APIs
+
+<video link to follow shortly>
+
+Postman collection available here:
+
+[[https://github.com/flowmoco/canopy-ai-insights/blob/main/2025-03-14_chat_context/Ollama.postman_collection.json][Ollama.postman_collection.json]]
