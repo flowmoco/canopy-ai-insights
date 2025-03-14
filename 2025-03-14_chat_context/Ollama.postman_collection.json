@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "463c4f0b-3a2e-47ac-9656-0fff781384db",
+		"name": "Ollama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3460689"
+	},
+	"item": [
+		{
+			"name": "Chat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\": \"llama3.2:latest\",\n \"stream\": false,\n \"options\": {\"temperature\": 0},\n\n \"messages\": [\n    {\"role\": \"user\",\n\n     // Your prompt in quotes below\n     \"content\": \"hello\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/chat",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat with history - Say hello in Portuguese",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\": \"llama3.2:latest\",\n \"stream\": false,\n \"options\": {\"temperature\": 0},\n\n \"messages\": [\n    {\"role\": \"user\", \"content\": \"Say hello in Portuguese\"}\n    , {\"role\": \"assistant\", \"content\": \"Olá!\"}\n    , {\"role\": \"user\", \"content\": \"Bye\"}\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/chat",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat with system prompt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\": \"llama3.2:latest\",\n \"stream\": false,\n \"options\": {\"temperature\": 0},\n\n \"messages\": [\n    {\"role\": \"system\", \"content\": \"You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. The data is in the format of an owner and then details about that owner. Records are separated by ';' and fields are separated by ','. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.\"}\n    , {\"role\": \"assistant\", \"content\": \"owner: Ben, love-colour: blue, hate-colour: green; owner: Stewart, love-colour: yellow, hate-colour: red\"}\n    , {\"role\": \"user\", \"content\": \"What is Ben's favourite colour and Stewart's least favourite colour?\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/chat",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat with system prompt 2 - Portuguese",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\": \"llama3.2:latest\",\n \"stream\": false,\n \"options\": {\"temperature\": 0},\n\n \"messages\": [\n    {\"role\": \"system\", \"content\": \"You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. The data is in the format of an owner and then details about that owner. Records are separated by ';' and fields are separated by ','. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.\"}\n    , {\"role\": \"assistant\", \"content\": \"owner: Ben, love-colour: blue, hate-colour: green; owner: Stewart, love-colour: yellow, hate-colour: red\"}\n    , {\"role\": \"user\", \"content\": \"What is Ben's favourite colour and Stewart's least favourite colour? Answer in Portuguese.\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/chat",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat with system prompt 3 - best",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\": \"llama3.2:latest\",\n \"stream\": false,\n \"options\": {\"temperature\": 0},\n\n \"messages\": [\n    {\"role\": \"system\", \"content\": \"You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. The data is in the format of an owner and then details about that owner. Records are separated by ';' and fields are separated by ','. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.\"}\n    , {\"role\": \"assistant\", \"content\": \"owner: Ben, love-colour: blue, hate-colour: green; owner: Stewart, love-colour: yellow, hate-colour: red\"}\n    , {\"role\": \"user\", \"content\": \"What is the best colour?\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/chat",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat with system prompt 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\": \"llama3.2:latest\",\n \"stream\": false,\n \"options\": {\"temperature\": 0},\n\n \"messages\": [\n    {\"role\": \"system\", \"content\": \"You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. The data is in the format of an owner and then details about that owner. Records are separated by ';' and fields are separated by ','. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.\"}\n    , {\"role\": \"assistant\", \"content\": \"owner: Ben, love-colour: orange, hate-colour: green; owner: Stewart, love-colour: yellow, hate-colour: red\"}\n    , {\"role\": \"user\", \"content\": \"What is the best colour?\"}\n    , {\"role\": \"assistant\", \"content\": \"I don't know. The context only mentions which colours Ben and Stewart like or dislike, but it doesn't provide a general answer about what the \\\"best\\\" color is.\"}\n    , {\"role\": \"user\", \"content\": \"Please try and answer disregarding the retrieved context. \"}\n\n    //, {\"role\": \"user\", \"content\": \"If you do not know the best colour what is the most popular?\"}\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/chat",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Embed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"model\": \"mxbai-embed-large\",\n  \"input\": \"Llamas are members of the camelid family\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:11434/api/embed",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "11434",
+					"path": [
+						"api",
+						"embed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
