@@ -51,4 +51,4 @@ docker compose up
 
 Create a user and then login to start using LibreChat.
 
-![Screenshot of LibreChat](2025-07-04_12-51.png "LibreChat chat interface")
+![Screenshot of LibreChat](librechat_screenshot.png "LibreChat chat interface")
