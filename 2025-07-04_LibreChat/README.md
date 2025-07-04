@@ -6,7 +6,7 @@ The following files were used in this episode to run LibreChat and were created 
 
 Download these files to get up and running with a matching setup as this episode.
 
- - [env](.env)
+ - [.env](.env)
  - [docker-compose.override.yml](docker-compose.override.yml)
  - [librechat.yaml](librechat.yaml)
  
@@ -45,3 +45,8 @@ OLLAMA_HOST=0.0.0.0 ollama serve
 docker compose up
 ```
 
+## Open LibreChat web interface
+
+[http://localhost:3080/](http://localhost:3080/)
+
+Create a user and then login to start using LibreChat.
