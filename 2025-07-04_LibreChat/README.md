@@ -50,3 +50,5 @@ docker compose up
 [http://localhost:3080/](http://localhost:3080/)
 
 Create a user and then login to start using LibreChat.
+
+![Screenshot of LibreChat](2025-07-04_12-51.png "LibreChat chat interface")
