@@ -1,0 +1,16 @@
+version: 1.2.8
+cache: true
+endpoints:
+  custom:
+    - name: "Ollama"
+      apiKey: "ollama"
+      baseURL: "http://host.docker.internal:11434/v1/"
+      models:
+        default: [
+          "deepseek-r1:1.5b",
+          "granite3.3:2b",
+          "llama3.2:latest"
+          ]
+        fetch: false # fetching list of models is not supported
+      titleConvo: true
+      titleModel: "current_model"
