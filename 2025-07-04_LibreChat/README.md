@@ -1,5 +1,13 @@
 # Canopy AI Insights part 6 - LibreChat
 
+## LibreChat demo branch with config files
+
+For convenience we have forked the official LibreChat repository and have committed the config files for this episode:
+
+[https://github.com/flowmoco/LibreChat/tree/demo/canopy-ai-insights](https://github.com/flowmoco/LibreChat/tree/demo/canopy-ai-insights)
+
+Clone the above repository and checkout the `demo/canopy-ai-insights` (or download a zip) and then start LibreChat using `docker compose` (instructions below).
+
 ## LibreChat quick start files
 
 The following files were used in this episode to run LibreChat and were created based on the LibreChat quick start guide (more details below).
