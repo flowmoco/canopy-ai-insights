@@ -33,7 +33,7 @@ The following parts of the LibreChat quick start were used as the basis for the 
 [Custom Endpoints](https://www.librechat.ai/docs/quick_start/custom_endpoints)
 
 
-## Start Ollaman listening on all interfaces
+## Start Ollama listening on all interfaces
 
 ``` shell
 OLLAMA_HOST=0.0.0.0 ollama serve
