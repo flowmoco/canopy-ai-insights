@@ -37,4 +37,10 @@ Postman collection available here:
 
 ** Part 6 - LibreChat
 
-<placeholder>
+/<YouTube video link here>/
+
+LibreChat instructions and notes available here:
+
+[[https://github.com/flowmoco/canopy-ai-insights/tree/main/2025-07-04_LibreChat][2025-07-04_LibreChat]]
+
+
