@@ -30,3 +30,11 @@ Links to external resources:
 Postman collection available here:
 
 [[https://github.com/flowmoco/canopy-ai-insights/blob/main/2025-03-14_chat_context/Ollama.postman_collection.json][Ollama.postman_collection.json]]
+
+** Part 5 - OpenRouter
+
+[[https://www.youtube.com/watch?v=HNhP1BuJf7M][https://www.youtube.com/watch?v=HNhP1BuJf7M]]
+
+** Part 6 - LibreChat
+
+<placeholder>
